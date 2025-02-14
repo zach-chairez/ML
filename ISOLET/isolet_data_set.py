@@ -75,8 +75,8 @@ class_description = classes.value_counts()
 # Each class is associated with 300 samples except 
 # class 6 and 13, which have 298 and 299 samples, respectively.  
 # Although we could stratify our training/testing data based on these
-# count differences although it may not be entirely necessary, we may just do 
-# a simple 70/30 split across the board at random. 
+# count differences, it may not be entirely necessary.  We'll do 
+# a classic 70/30 split across the board at random. 
 
 ''' --------------------------------------------------------------------- '''
 
