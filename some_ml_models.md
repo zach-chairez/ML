@@ -9,8 +9,8 @@ Logistic Regression is a statistical method used for binary classification probl
 - Provides interpretable feature importance through model coefficients.
 
 ### Computational Complexity:
-- **Training:** \( O(n \cdot m) \), where \( n \) is the number of samples and \( m \) is the number of features.
-- **Prediction:** \( O(m) \), as it requires computing a weighted sum of the features.
+- **Training:** $O(n \cdot m)$, where $n$ is the number of samples and $m$ is the number of features.
+- **Prediction:** $O(m)$, as it requires computing a weighted sum of the features.
 
 ### Python Implementation:
 ```python
@@ -43,8 +43,8 @@ Time Series Analysis focuses on analyzing temporal data points to identify trend
 - Helps understand trends and cyclical patterns in data.
 
 ### Computational Complexity:
-- **Simple Models (AR, MA, ARMA):** \( O(n) \)
-- **More Complex Models (ARIMA, SARIMA, LSTM):** \( O(n^2) \) or worse
+- **Simple Models (AR, MA, ARMA):** $O(n)$
+- **More Complex Models (ARIMA, SARIMA, LSTM):** $O(n^2)$ or worse
 
 ### Python Implementation:
 ```python
@@ -74,8 +74,8 @@ Decision trees recursively split data based on feature values to create a hierar
 - Easy to interpret and visualize.
 
 ### Computational Complexity:
-- **Training:** \( O(nm \log n) \)
-- **Prediction:** \( O(\log n) \)
+- **Training:** $O(nm \log n)$
+- **Prediction:** $O(\log n)$
 
 ### Python Implementation:
 ```python
@@ -100,8 +100,8 @@ Gradient Boosting builds an ensemble of weak decision trees, iteratively improvi
 - More powerful than standalone decision trees.
 
 ### Computational Complexity:
-- **Training:** \( O(nmT) \), where \( T \) is the number of trees.
-- **Prediction:** \( O(T) \).
+- **Training:** $O(nmT)$, where $T$ is the number of trees.
+- **Prediction:** $O(T)$.
 
 ### Python Implementation:
 ```python
@@ -126,8 +126,8 @@ Neural networks use layers of interconnected neurons to learn complex patterns i
 - Captures non-linear relationships effectively.
 
 ### Computational Complexity:
-- **Training:** \( O(nmL) \), where \( L \) is the number of layers.
-- **Prediction:** \( O(mL) \).
+- **Training:** $O(nmL)$, where $L$ is the number of layers.
+- **Prediction:** $O(mL)$.
 
 ### Python Implementation (Using TensorFlow):
 ```python
@@ -154,10 +154,10 @@ model.fit(X_train, y_train, epochs=10, batch_size=32, verbose=1)
 ## Summary Table:
 | Model | Type | Complexity (Training) | Best Use Case |
 |--------|-------|---------------------|--------------|
-| Logistic Regression | Classification | \( O(nm) \) | Binary classification |
-| Time Series (ARIMA) | Forecasting | \( O(n^2) \) | Temporal data trends |
-| Decision Trees | Classification | \( O(nm \log n) \) | Rule-based models |
-| Gradient-Boosted Trees | Classification | \( O(nmT) \) | High accuracy on structured data |
-| Neural Networks | Deep Learning | \( O(nmL) \) | Complex, high-dimensional data |
+| Logistic Regression | Classification | $O(nm)$ | Binary classification |
+| Time Series (ARIMA) | Forecasting | $O(n^2)$ | Temporal data trends |
+| Decision Trees | Classification | $O(nm \log n)$ | Rule-based models |
+| Gradient-Boosted Trees | Classification | $O(nmT)$ | High accuracy on structured data |
+| Neural Networks | Deep Learning | $O(nmL)$ | Complex, high-dimensional data |
 
 This markdown file serves as a guide to common machine learning models, their applications, and their implementations in Python.
