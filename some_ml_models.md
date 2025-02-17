@@ -22,7 +22,7 @@ from sklearn.model_selection import train_test_split
 X, y = make_classification(n_samples=1000, n_features=10)
 
 # Split into train and test
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=2356)
 
 # Train logistic regression model
 model = LogisticRegression()
@@ -52,7 +52,7 @@ from statsmodels.tsa.arima.model import ARIMA
 import numpy as np
 
 # Simulate time series data
-np.random.seed(42)
+np.random.seed(2356)
 time_series = np.cumsum(np.random.randn(100))
 
 # Fit ARIMA model
